@@ -3,6 +3,7 @@ import "./About.scss";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
 import { urlFor, client } from "../../client";
+import { AppWrap } from "../../wrapper";
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -15,8 +16,9 @@ const About = () => {
   return (
     <>
       <h2 className="head-text">
-        I understand that a <span>Successful Business</span> <br /> is a Result
-        <span> of effective development</span>
+        I am <span>convinced</span> that an <span>excellent app</span> <br />{" "}
+        will boost
+        <span> profits</span>
       </h2>
       <div className="app__profiles">
         {abouts.map((about, index) => (
@@ -41,4 +43,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AppWrap(About, "about");

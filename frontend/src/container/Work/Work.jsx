@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Work.scss";
+import { AiFillEye, AiFillGithub } from "react-icons/ai";
 
 const Work = () => {
   return <div>Work</div>;

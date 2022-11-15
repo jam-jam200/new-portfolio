@@ -48,6 +48,7 @@
   p {
     text-transform: uppercase;
     color: var(--black-color);
+    font-size: 0.8rem;
   }
 }
 
@@ -160,7 +161,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #cbcbcb;
+    background-color: #fff;
     margin: 0.5rem;
 
     transition: background-color 0.2s ease-in-out;
