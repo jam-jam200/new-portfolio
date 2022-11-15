@@ -3,7 +3,8 @@ import "./Work.scss";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { urlFor, client } from "../../client";
-import { AppWrap } from "../../wrapper";
+import { AppWrap, MotionWrap } from "../../wrapper";
+import Skills from "../Skills/Skills";
 
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -132,4 +133,8 @@ const Work = () => {
   );
 };
 
-export default AppWrap(Work, "work");
+export default AppWrap(
+  MotionWrap(Work, "app__works"),
+  "work",
+  "app__primarybg"
+);
