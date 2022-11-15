@@ -27,9 +27,9 @@ const Header = () => {
             <span>👋</span>
             <div style={{ marginLeft: 20 }}>
               <p className="p-text">
-                Hello, I create websites that spark your company's growth.
+                Hi, I build websites that help business flourish.
               </p>
-              <h1 className="head-text">I am Jessica</h1>
+              <h1 className="head-text">Jess here</h1>
             </div>
           </div>
           <div className="tag-cmp app__flex">
@@ -42,7 +42,7 @@ const Header = () => {
       <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="app__header__img"
+        className="app__header-img"
       >
         <img src={images.profile} alt="profile_bg" />
         <motion.img
@@ -59,7 +59,7 @@ const Header = () => {
         className="app__header-circles"
         whileInView={scaleVariants.whileInView}
       >
-        {[images.redux, images.sass, images.reactR].map((circle, index) => (
+        {[images.tailwind, images.reactjs, images.reactR].map((circle, index) => (
           <div className="circle-cmp app__flex" key={`circle-${index}`}>
             <img src={circle} alt="circle" />
           </div>
