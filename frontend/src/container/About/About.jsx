@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { images } from "../../constants";
 import { urlFor, client } from "../../client";
 import { AppWrap, MotionWrap } from "../../wrapper";
+import Resume from "./resume.pdf";
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -39,6 +40,9 @@ const About = () => {
           </motion.div>
         ))}
       </div>
+      <a href={Resume} download>
+        <button className="app__profile-button">Download CV</button>
+      </a>
     </>
   );
 };
